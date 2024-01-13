@@ -1,0 +1,88 @@
+.character-card{
+    width: 350px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: $color4;
+    -webkit-box-shadow: -1px 10px 20px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 20px -6px rgba(0,0,0,0.75);
+    box-shadow: -1px 10px 20px -6px rgba(0,0,0,0.75);
+    border: 0px solid $color3;
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px 5px 20px;
+    }
+    &__name{
+        color: $color3;
+        font-family: 'PoppinsBold';
+        font-size: 18px;
+        font-style: normal;
+        line-height: normal;
+    }
+    &__alive{
+        font-size: 14px;
+        width: 70px;
+        height: 20px;
+        color: $color4;
+        background-color: $color6;
+        text-align: center;
+    }
+    &__dead{
+        font-size: 14px;
+        width: 70px;
+        height: 20px;
+        color: $color4;
+        background-color: $color14;
+        text-align: center;
+    }
+
+    &__unknown{
+        font-size: 14px;
+        width: 70px;
+        height: 20px;
+        color: $color4;
+        background-color: $color20;
+        text-align: center;
+    }
+
+
+
+
+    &__img{
+        width: 160px;
+        height: 160px;
+        margin-right: 20px;
+    }
+    &__data{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+    }
+    &__subtitle{
+        color: $color2;
+        font-family: 'PoppinsBold';
+        font-size: 12px;
+        font-style: normal;
+        line-height: normal;
+    }
+    &__text{
+        font-family: 'Poppins';
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+    }
+    &__btn{
+        display: flex;
+        width: 277px;
+        border-radius: 100px;
+        border: 0;
+        color: $color3;
+        justify-content: center;
+        font-family: 'PoppinsBold';
+        font-size: 16px;
+        font-style: normal;
+        line-height: normal;
+        margin: 10px auto;
+    }
+}

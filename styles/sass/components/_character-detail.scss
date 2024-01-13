@@ -1,0 +1,239 @@
+.character{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+
+    @include adaptTo('not-mobile'){
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    @include adaptTo('desktop-l'){
+        width: 1024px;
+        height: 531px;
+        -webkit-box-shadow: 1px 6px 6px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 6px 6px 0px rgba(0,0,0,0.75);
+        box-shadow: 1px 6px 6px 0px rgba(0,0,0,0.75);
+        background-color: $color4;
+        justify-content: space-around;
+        margin: 50px auto;
+        gap: 20px;
+    }
+    @include adaptTo('desktop-xl'){
+        width: 1024px;
+        height: 531px;
+        -webkit-box-shadow: 1px 6px 6px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 6px 6px 0px rgba(0,0,0,0.75);
+        box-shadow: 1px 6px 6px 0px rgba(0,0,0,0.75);
+        background-color: $color4;
+        justify-content: space-around;
+        margin: 50px auto;
+        gap: 20px;
+    }
+
+    &__presentation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include adaptTo('not-mobile'){
+           margin: 0 auto 15% auto ;
+        }
+        @include adaptTo('desktop-l'){
+            margin: 0 20px 8%  20px ;
+        }
+        @include adaptTo('desktop-xl'){
+            margin: 0 20px 8%  20px ;
+        }
+    }
+
+    &__img{
+        width: 200px;
+        height: 200px;
+        border: 4px solid $color9;
+        border-radius: 100%;
+    }
+
+    &__name{
+        color: $color3;
+        text-align: center;
+        font-family: 'PoppinsBold';
+        font-size: 20px;
+        font-style: normal;
+        line-height: normal;
+        margin-top: 20px;
+        border-bottom: 3px solid $color3;
+    }
+
+    &__data{
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        flex-direction: column;
+        width: 85%;
+        @include adaptTo('not-mobile'){
+            width: 430px;
+            background-color: $color4;
+        }
+
+        @include adaptTo('desktop-m'){
+            width: 730px;
+            height: 530px;
+            background-color: $color4;
+            padding: 60px 10px 0px 20px;
+            margin: 20px auto;
+        }
+        @include adaptTo('desktop-l'){
+            width: 730px;
+            height: 530px;
+            background-color: $color4;
+            padding: 60px 10px 0px 20px;
+            margin: 20px auto;
+        }
+        @include adaptTo('desktop-xl'){
+            width: 730px;
+            height: 530px;
+            background-color: $color4;
+            padding: 60px 10px 0px 20px;
+            margin: 20px auto;
+        }
+    }
+
+    &__title{
+        color: $color2;
+        font-family: 'PoppinsBold';
+        font-size: 14px;
+        font-style: normal;
+        line-height: normal;
+        margin-top: 10px;
+    }
+    &__status-list{
+        display: flex;
+        justify-content: space-around;
+        gap: 5px;
+        margin: 10px 0;
+        @include adaptTo('not-mobile'){
+            justify-content: left;
+            gap: 10px;
+        }
+    }
+
+    &__alive{
+        background-color: $color21;
+        border-radius: 100px;
+        padding: 3px 10px 3px 10px;
+        font-family: 'Poppins';
+        font-size: 14px;
+        margin-top: 10px;
+        &--checked{
+            background-color: $color15;
+            border-radius: 100px;
+            padding: 3px 10px 3px 10px;
+            font-family: 'Poppins';
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+
+    &__dead{
+        background-color: $color21;
+        border-radius: 100px;
+        padding: 3px 10px 3px 10px;
+        font-family: 'Poppins';
+        font-size: 14px;
+        margin-top: 10px;
+        &--checked{
+            background-color: $color14;
+            border-radius: 100px;
+            padding: 3px 10px 3px 10px;
+            font-family: 'Poppins';
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+
+
+    &__uknown{
+        background-color: $color21;
+        border-radius: 100px;
+        padding: 3px 10px 3px 10px;
+        font-family: 'Poppins';
+        font-size: 14px;
+        margin-top: 10px;
+        &--checked{
+            background-color: $color20;
+            border-radius: 100px;
+            padding: 3px 10px 3px 10px;
+            font-family: 'Poppins';
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+
+    &__texts{
+        @include adaptTo('desktop-m'){
+            display: flex;
+            flex-direction: row;
+        }
+        @include adaptTo('desktop-l'){
+            display: flex;
+            flex-direction: row;
+        }
+        @include adaptTo('desktop-xl'){
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+
+    &__info{
+        font-size: 18px;
+        font-family: 'Poppins';
+        background-color: $color21;
+        border-radius: 100px;
+        padding: 3px 10px 3px 10px;
+        width: 100%;
+        @include adaptTo('not-mobile'){
+            width: 190px;
+            margin-right: 20px;
+        }
+    }
+
+
+    &__location{
+        font-size: 18px;
+        font-family: 'Poppins';
+        background-color: $color21;
+        border-radius: 100px;
+        padding: 3px 10px 3px 10px;
+        width: 100%;
+        @include adaptTo('not-mobile'){
+            width: 190px;
+            margin-right: 20px;
+        }
+    }
+
+
+
+
+    &__episode-list{
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__episode{
+        font-size: 18px;
+        font-family: 'Poppins';
+        background-color: $color21;
+        border-radius: 100px;
+        padding: 3px 10px 3px 10px;
+        width: 51px;
+    }
+}

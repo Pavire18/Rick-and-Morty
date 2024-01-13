@@ -1,0 +1,47 @@
+.header{
+    &__main{//HACER TRANFORM:TRASLATE X -50%
+        background-color: $color3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    &__data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    &__title{
+        font-size: 20px;
+        color: $color4;
+        text-decoration: underline;
+        line-height: 25px;
+    }
+
+    &__subtitle{
+        font-size: 18px;
+        color: $color4;
+        text-decoration: none;
+        font-family: 'PoppinsBold';
+    }
+    &__section{
+        display: flex;
+        justify-content: center;
+        background-color: $color9;
+        padding: 10px;
+    }
+    &__option{
+        font-size: 18px;
+        color: $color3;
+        font-family: 'PoppinsBold';
+    }
+}
+.arrow{
+    color: $color4;
+    font-size: 70px;
+    position: absolute;
+    left: 40px;
+    top: 6px;
+}

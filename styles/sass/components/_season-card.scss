@@ -1,0 +1,63 @@
+.season-card{
+    display: flex;
+    width: 350px;
+    height: 575px;
+    border-radius: 30px;
+    background-color: $color4;
+    -webkit-box-shadow: -1px 10px 20px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 10px 20px -6px rgba(0,0,0,0.75);
+    box-shadow: -1px 10px 20px -6px rgba(0,0,0,0.75);
+    border: 0px solid $color3;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    &__title{
+        display: flex;
+        width: 323.167px;
+        height: 52px;
+        align-items: center;
+        justify-content: center;
+        background-color: $color21;
+        margin: 0;
+        border-radius: 30px;
+        color: $color18;
+        font-size: 18px;
+        font-family: 'Poppins';
+        margin-bottom: 5px;
+    }
+    &__subtitle{
+        color: $color2;
+        font-family: 'PoppinsBold';
+        font-size: 12px;
+        font-style: normal;
+        line-height: normal;
+        margin-bottom: 5px;
+    }
+    &__date{
+        text-align: center;
+        font-family: 'Poppins';
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    &__episode-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    &__episode{
+        height: 22px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: $color21;
+        margin: 0;
+        border-radius: 30px;
+        color: $color3;
+        font-size: 12px;
+        font-family: 'PoppinsBold';
+        margin: 8px 0;
+        border: 0;
+    }
+}

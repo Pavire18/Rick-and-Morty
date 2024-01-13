@@ -1,0 +1,42 @@
+.header-home{
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+    background-image: url(../../assets/images/cabecera.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 714px;
+    @include adaptTo('not-mobile'){
+        height: 812px;
+    }
+
+    &__title{
+        font-size: 36px;
+        color: $color4;
+        text-decoration: underline;
+        @include adaptTo('not-mobile'){
+            font-size: 60px;
+        }
+        @include adaptTo('tablet'){
+            font-size: 45px;
+        }
+    }
+
+    &__subtitle{
+        font-size: 28px;
+        color: $color4;
+        text-decoration: none;
+        font-family: 'PoppinsBold';
+        @include adaptTo('not-mobile'){
+            font-size: 50px;
+        }
+        @include adaptTo('tablet'){
+            font-size: 33px;
+        }
+
+
+    }
+}
+
