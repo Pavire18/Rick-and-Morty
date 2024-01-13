@@ -45,5 +45,4 @@ const printSelectorBySection = (section) =>{
         <option value="type">Type</option>
     `;
     }
-   
 }

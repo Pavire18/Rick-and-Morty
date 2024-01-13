@@ -66,33 +66,3 @@ const addResidents = (residents) =>{
         residentList.appendChild(resident);
     });
 }
-
-
-/*
-mainContainer.innerHTML=`
-    <div class="general-detail">
-        <p class="general-detail__name">Citadel of Ricks</p>
-        <div class="general-detail__data">
-            <div class="general-detail__texts">
-                <div class="general-detail__text">
-                    <p class="general-detail__title">TYPE</p>
-                    <p class="general-detail__info">Space Station</p>
-                </div>
-                <div class="general-detail__text">
-                    <p class="general-detail__title">DIMENSION</p>
-                    <p class="general-detail__info">Unknown</p>
-                </div>
-            </div>
-            <p class="general-detail__title">RESIDENTS</p>
-            <div class="general-detail__characters-list">
-                <img class="general-detail__img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"></img>
-                <img class="general-detail__img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"></img>
-                <img class="general-detail__img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"></img>
-                <img class="general-detail__img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"></img>
-                <img class="general-detail__img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"></img>
-                <img class="general-detail__img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"></img>
-                <img class="general-detail__img" src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"></img>
-            </div>
-        </div>
-    </div>`;
-*/

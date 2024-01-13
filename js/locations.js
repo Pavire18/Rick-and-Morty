@@ -56,15 +56,12 @@ const getLocations = async (info, parameter) =>{
     let url= URL_BASE+'/location';
     if(info){
         url+=`/?${parameter}=${info}`;
-    //     page={id:'home_link3' , url:url};
-    //     contadorPaginas++;
-    //     localStorage.setItem('page'+contadorPaginas, JSON.stringify(page));
     }
     let response= urlNext!==null ? await fetch(urlNext) : await fetch(url);
     data = await response.json();
     dataAll= [...dataAll, ...mapDataLocations(data.results)];
     urlNext = data.info.next;
-    
+
     return dataAll;
 }
 
@@ -81,28 +78,3 @@ const mapDataLocations = (data) =>{
 
     return dataMapped;
 }
-
-
-
-/*
- mainContainer.innerHTML=
-    `
-    <div class="card-list">
-        <div class="location-card">
-            <p class="location-card__name">Citadel of Ricks</p>
-            <div class="location-card__data">
-                <div class="location-card__info">
-                    <p class="location-card__text1">TYPE</p>
-                    <p class="location-card__text2">Cluster</p>
-                </div>
-                <div class="location-card__separator"> </div>
-                <div class="location-card__info">
-                    <p class="location-card__text1">DIMENSION</p>
-                    <p class="location-card__text2">Unknown</p>
-                </div>
-            </div>
-            <button class="location-card__btn" data-link="home_link3_1">+ MORE DETAILS</button>
-        </div>
-    </div>
-    `;
-*/
